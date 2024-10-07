@@ -99,23 +99,23 @@ app.get(`/about-me`, (req, res) => {
 })
 
 app.get(`/movies`, (req, res) => {
-    res.send({
-        movie1: {
+    res.send([
+        {
             name: `Mad Max: Fury Road`,
             release: `May 15, 2015`,
             runtime: 7200
         },
-        movie2: {
+        {
             name: `Furiosa: A Mad Max Saga`,
             release: `May 24, 2024`,
             runtime: 8880
         },
-        movie3: {
+        {
             name: `Mad Max: The Road Warrior`,
             release: `May 21, 1982`,
             runtime: 5640
         }
-    })
+    ])
 })
 
 //! If there are two app.get's with the same name, it will
